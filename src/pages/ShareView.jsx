@@ -11,7 +11,7 @@ export default function ShareView() {
 
   useEffect(() => {
     api
-      .get(`/api/share-link/info/${token}`)
+      .get(`/share-link/info/${token}`)
       .then((res) => setFile(res.data))
       .catch((err) => {
         setError(
@@ -25,7 +25,7 @@ export default function ShareView() {
     try {
       const downloadUrl = `${
         import.meta.env.VITE_API_URL
-      }/api/share-link/download/${token}`;
+      }/share-link/download/${token}`;
       window.open(downloadUrl, "_blank");
     } catch (err) {
       console.error("Download failed", err);
