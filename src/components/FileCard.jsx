@@ -11,7 +11,7 @@ export default function FileCard({ file }) {
       setLoading(true);
       const res = await api.post(`/share-link/${file._id}/link`);
       await navigator.clipboard.writeText(res.data.url);
-      toast.success("Share link copied to clipboard 🔗");
+      toast.success("Share link copied to clipboard ");
     } catch (err) {
       console.error(err);
       toast.error("Failed to generate share link");
@@ -45,7 +45,6 @@ export default function FileCard({ file }) {
 
   return (
     <div className="group bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-all duration-300 w-full h-full min-h-80 justify-between">
-      {/* Top Section: Icon and Labels */}
       <div className="flex flex-col items-center w-full">
         <div className="p-4 sm:p-5 bg-blue-50 rounded-2xl mb-4 group-hover:bg-blue-100 transition-colors">
           <FileText className="text-blue-600 w-10 h-10 sm:w-12 sm:h-12" />
