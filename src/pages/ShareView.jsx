@@ -25,8 +25,8 @@ export default function ShareView() {
     try {
       const downloadUrl = `${
         import.meta.env.VITE_API_URL
-      }/share-link/download/${token}`;
-      window.open(downloadUrl, "_blank");
+      }/api/share-link/download/${token}`;
+      window.location.href = downloadUrl;
     } catch (err) {
       console.error("Download failed", err);
     }
