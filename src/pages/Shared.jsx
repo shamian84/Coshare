@@ -10,7 +10,7 @@ export default function Shared() {
 
   useEffect(() => {
     api
-      .get("/files/shared")
+      .get("/api/files/shared")
       .then((res) => {
         setFiles(res.data);
       })
