@@ -152,7 +152,7 @@ export default function Register() {
             <p className="text-sm text-gray-600">
               Already have an account?{" "}
               <Link
-                to="/login"
+                to="/"
                 className="text-blue-600 font-bold hover:underline underline-offset-4 transition-all"
               >
                 Log in
