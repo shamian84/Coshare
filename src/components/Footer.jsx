@@ -32,7 +32,7 @@ export default function Footer() {
               <Github size={20} />
             </a>
             <a
-              href="shadow-dev-1.preview.emergentagent.com"
+              href="https://shadow-dev-1.preview.emergentagent.com/"
               className="text-gray-400 hover:text-blue-600 transition-colors"
               aria-label="Website"
             >
