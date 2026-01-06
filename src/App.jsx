@@ -15,7 +15,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/share/:token" element={<ShareView />} />
 
@@ -37,7 +37,7 @@ export default function App() {
           }
         />
 
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+        <Route path="/" element={<Navigate to="/" replace />} />
         <Route
           path="*"
           element={<h1 className="p-6 text-xl">404 | Page Not Found</h1>}
