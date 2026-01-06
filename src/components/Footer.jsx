@@ -25,14 +25,14 @@ export default function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="https://github.com/shamian84"
               className="text-gray-400 hover:text-blue-600 transition-colors"
               aria-label="GitHub"
             >
               <Github size={20} />
             </a>
             <a
-              href="https://github.com/shamian84"
+              href="shadow-dev-1.preview.emergentagent.com"
               className="text-gray-400 hover:text-blue-600 transition-colors"
               aria-label="Website"
             >
